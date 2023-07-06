@@ -1,0 +1,48 @@
+# worker-monitoring-system
+
+This is a project consisting of a client and server folder.
+
+## Server
+
+The server folder contains the back-end code of the application.
+
+### Environment Variables
+
+Create a `.env` file in the server folder with the following variables:
+
+SECRET_KEY=' '
+DATABASE=' '
+
+Make sure to provide appropriate values for `SECRET_KEY` and `DATABASE`.
+
+### Installation
+
+To install the dependencies for the server, navigate to the server folder and run:
+
+npm install
+
+### Starting the Server
+
+To start the server, run the following command within the server folder:
+
+npm start
+
+## Client
+
+The client folder contains the front-end code of the application.
+
+### Installation
+
+To install the dependencies for the client, navigate to the client folder and run:
+
+npm install
+
+### Starting the Client
+
+To start the client, run the following command within the client folder:
+
+npm start
+
+Make sure to start the server before running the client to ensure proper functionality.
+
+
