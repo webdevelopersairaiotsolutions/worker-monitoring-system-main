@@ -2,11 +2,11 @@
 
 This is a project consisting of a client and server folder.
 
-## Server
+# Server
 
 The server folder contains the back-end code of the application.
 
-### Environment Variables
+# Environment Variables
 
 Create a `.env` file in the server folder with the following variables:
 
