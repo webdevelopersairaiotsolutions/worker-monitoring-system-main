@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Navbar from "../../Navbar";
+import Sidebar from "../../Sidebar";
 
 const Profile = () => {
   const [isEditing, setIsEditing] = useState(false);
@@ -22,7 +24,9 @@ const Profile = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 ml-80 mt-14">
+      <Navbar />
+      <Sidebar />
       <h1 className="text-2xl font-semibold mb-4">Profile</h1>
       <div className="bg-white rounded-lg shadow-lg p-6">
         <div className="mb-4">
@@ -116,12 +120,6 @@ const Profile = () => {
             Edit
           </button>
         )}
-        <button
-          className="bg-red-500 text-white font-semibold px-4 py-2 rounded-md"
-          onClick={handleLogoutClick}
-        >
-          Logout
-        </button>
       </div>
     </div>
   );

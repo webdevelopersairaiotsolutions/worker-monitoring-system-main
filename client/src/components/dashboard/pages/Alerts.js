@@ -114,7 +114,7 @@ const Alerts = () => {
   });
 
   return (
-    <div className="p-6 ml-60 mt-14">
+    <div className="p-6 ml-80 mt-14">
       <Navbar />
       <Sidebar />
       <h1 className="text-2xl font-semibold mb-4">Notifications</h1>

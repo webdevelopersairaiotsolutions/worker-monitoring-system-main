@@ -17,7 +17,7 @@ const Dashboard = () => {
   const isDashboardPage = location.pathname === "/dash";
 
   return (
-    <div className=" min-h-screen ml-60 mt-14">
+    <div className=" min-h-screen ml-80 mt-14">
       <div className="flex">
         <Navbar />
         <Sidebar />

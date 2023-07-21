@@ -110,7 +110,7 @@ const Login = () => {
               className="w-full border border-gray-300 rounded-md py-2 px-3 mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
             <p className="text-xs text-right mt-1">
-              <a href="/" className="text-blue-500 hover:underline">
+              <a href="/forgot-password" className="text-blue-500 hover:underline">
                 Forgot Password?
               </a>
             </p>
