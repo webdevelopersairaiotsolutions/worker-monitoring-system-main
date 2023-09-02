@@ -1,36 +1,45 @@
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
 
 const CardTwo = () => {
   return (
-    <div className="rounded-xl border border-stroke bg-customColorTwo p-8 shadow-md">
-      <div className="flex h-11.5 w-11.5 items-center justify-center rounded-full ">
-      <h1 className="text-white text-lg font-bold">New Orders</h1>
-      </div>
-
-      <div className="mt-4 flex items-end justify-between">
-        <div>
-          <h4 className="text-title-md font-bold text-white">8</h4>
-          <span className="text-sm font-medium text-white">New Orders</span>
+    <motion.div
+      initial={{ scale: 0.9, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="relative rounded-lg bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 p-6 shadow-lg overflow-hidden"
+      style={{
+        backdropFilter: "blur(10px)",
+      }}
+    >
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-4">
+          <div>
+            <h1 className="text-white text-xl font-semibold">Attendance</h1>
+            <p className="text-sm font-medium text-white">Yesterday: 85%</p>
+            <p className="text-sm font-medium text-white">Today: 90%</p>
+          </div>
         </div>
-
-        <span className="flex items-center gap-1 text-sm font-medium text-white">
-          2.5%
-          <svg
-            className="fill-current"
-            width="10"
-            height="11"
-            viewBox="0 0 10 11"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+        <div className="w-14 h-14 bg-pink-600 rounded-full flex items-center justify-center">
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="text-2xl font-bold text-yellow-400"
           >
-            <path
-              d="M5.64284 7.69237L9.09102 4.33987L10 5.22362L5 10.0849L-8.98488e-07 5.22362L0.908973 4.33987L4.35716 7.69237L4.35716 0.0848701L5.64284 0.0848704L5.64284 7.69237Z"
-              fill=""
-            />
-          </svg>
-        </span>
+            +5%
+          </motion.span>
+        </div>
       </div>
-    </div>
+      <div className="relative w-full h-2 rounded-full bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: "75%" }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="absolute top-0 left-0 h-2 rounded-full bg-white"
+        />
+      </div>
+    </motion.div>
   );
 };
 

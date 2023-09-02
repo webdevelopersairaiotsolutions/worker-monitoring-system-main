@@ -6,15 +6,15 @@ const ChartFour = () => {
     series: [
       {
         data: [
-          8, 12, 15, 11, 10, 0, 0, 10, 12, 11, 14, 10, 0, 0, 11, 12, 10, 13,
-          9, 0, 0, 14, 10, 9, 13, 11, 0, 0, 13, 9,
+          8, 12, 15, 11, 10, 0, 0, 10, 12, 11, 14, 10, 0, 0, 11, 12, 10, 13, 9,
+          0, 0, 14, 10, 9, 13, 11, 0, 0, 13, 9,
         ],
       },
     ],
   });
 
   const options = {
-    colors: ["#3C50E0"],
+    colors: ["#F87171"], // Updated color
     chart: {
       fontFamily: "Satoshi, sans-serif",
       type: "bar",
@@ -27,7 +27,7 @@ const ChartFour = () => {
       bar: {
         horizontal: false,
         columnWidth: "55%",
-        borderRadius: 2,
+        borderRadius: 5, // Increased border radius
       },
     },
     dataLabels: {
@@ -79,13 +79,7 @@ const ChartFour = () => {
       },
     },
     legend: {
-      show: true,
-      position: "top",
-      horizontalAlign: "left",
-      fontFamily: "inter",
-      markers: {
-        radius: 99,
-      },
+      show: false, // Removed legend
     },
     grid: {
       yaxis: {
@@ -105,11 +99,13 @@ const ChartFour = () => {
   };
 
   return (
-    <div className="col-span-12 rounded-md border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-md dark:border-strokedark dark:bg-boxdark sm:px-7.5 ">
+    <div className="col-span-12 rounded-md bg-white px-5 pt-7.5 pb-5 shadow-md dark:bg-boxdark sm:px-7.5">
       <div>
-        <h3 className="text-xl font-semibold text-black dark:text-white">
-          Worker Monitoring
-        </h3>
+        <div>
+          <div className="w-full">
+            <p className="font-semibold text-primary py-4">Total work hours</p>
+          </div>
+        </div>
       </div>
 
       <div className="mb-2">

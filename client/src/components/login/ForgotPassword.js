@@ -1,10 +1,11 @@
 // ForgotPassword.js
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import the Link component from react-router-dom (assuming you are using React Router)
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import the Link component from react-router-dom (assuming you are using React Router)
+import image1 from "../../assets/login1.jpg";
 
 const ForgotPassword = () => {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -16,17 +17,27 @@ const ForgotPassword = () => {
       // Here, you should make an API call to your backend to initiate the password reset process
       // For example, using axios:
       // await axios.post('/api/reset-password', { email });
-      setMessage('Password reset email sent. Please check your inbox.');
+      setMessage("Password reset email sent. Please check your inbox.");
     } catch (error) {
-      setMessage('Error occurred. Please try again later.');
+      setMessage("Error occurred. Please try again later.");
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-customColor py-12 px-4 sm:px-6 lg:px-8">
+    <div
+      className="min-h-screen flex items-center justify-center bg-customColor py-12 px-4 sm:px-6 lg:px-8"
+      style={{
+        backgroundImage: `url(${image1})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+      }}
+    >
       <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-lg shadow-lg">
         <div>
-          <h2 className="mt-6 text-center text-lg font-bold">Forgot Password</h2>
+          <h2 className="mt-6 text-center text-lg font-bold">
+            Forgot Password
+          </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             Enter your email address to reset your password.
           </p>
@@ -53,9 +64,7 @@ const ForgotPassword = () => {
           </div>
 
           {message && (
-            <p className="mt-2 text-center text-sm text-gray-600">
-              {message}
-            </p>
+            <p className="mt-2 text-center text-sm text-gray-600">{message}</p>
           )}
 
           <div>
@@ -68,7 +77,9 @@ const ForgotPassword = () => {
           </div>
         </form>
         <div className="mt-4 text-center">
-          <Link to="/" className="text-sm text-gray-600 underline">Back to Login</Link>
+          <Link to="/" className="text-sm text-gray-600 underline">
+            Back to Login
+          </Link>
         </div>
       </div>
     </div>

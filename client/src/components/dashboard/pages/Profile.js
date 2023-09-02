@@ -24,10 +24,10 @@ const Profile = () => {
   };
 
   return (
-    <div className="p-6 ml-80 mt-14">
+    <div className="p-6 ml-72 mt-20">
       <Navbar />
       <Sidebar />
-      <h1 className="text-2xl font-semibold mb-4">Profile</h1>
+      {/* <h1 className="text-2xl font-semibold mb-4">Profile</h1> */}
       <div className="bg-white rounded-lg shadow-lg p-6">
         <div className="mb-4">
           <label

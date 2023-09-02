@@ -5,10 +5,10 @@ import Sidebar from "../../Sidebar";
 
 const Settings = () => {
   return (
-    <div className="p-6 ml-80 mt-14">
+    <div className="p-6 ml-72 mt-20">
       <Navbar />
       <Sidebar />
-      <h1 className="text-2xl font-semibold mb-4">Settings</h1>
+      
       <div className="bg-white rounded-lg shadow-lg p-6">
         <div className="mb-6">
           <h2 className="text-xl font-semibold mb-2">General</h2>

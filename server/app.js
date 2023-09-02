@@ -19,6 +19,7 @@ app.use(router);
 
 // Include the video streaming code
 require("./videoStream");
+require("./videoStream2");
 
 app.listen(port,()=>{
     console.log(`server start at port no : ${port}`);

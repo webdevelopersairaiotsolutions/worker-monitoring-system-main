@@ -41,6 +41,11 @@ const streams = [
     streamUrl: "http://admin:Saira2020@202.123.141.238:8017/video2.mjpg",
     wsPort: 6796,
   },
+  {
+    name: "Bunny",
+    streamUrl: "http://admin:Saira2020@202.123.141.238:8013/video2.mjpg",
+    wsPort: 6797,
+  },
 ];
 
 const ffmpegOptions = {
