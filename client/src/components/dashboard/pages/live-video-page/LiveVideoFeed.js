@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../Navbar";
 import Sidebar from "../../../Sidebar";
+import ViewAllFeed from "../live-video-page/cameras/ViewAllFeed";
+import RTSPstream from "../RTSPstream";
 const LiveVideoFeed = () => {
   const navigate = useNavigate();
 
@@ -12,7 +14,9 @@ const LiveVideoFeed = () => {
     <div className="p-6 ml-custom-margin-left mt-14">
       <Navbar />
       <Sidebar />
-      <button
+      <ViewAllFeed />
+      <RTSPstream />
+      {/* <button
         className="bg-customColorTwo hover:bg-customColor text-white font-customFont1 py-2 px-4 rounded m-2 transition-colors duration-300"
         onClick={() => handleButtonClick("/view-all-feed")}
       >
@@ -23,7 +27,7 @@ const LiveVideoFeed = () => {
         onClick={() => handleButtonClick("/rtsp-stream")}
       >
         View all reo link camera feeds
-      </button>
+      </button> */}
     </div>
   );
 };

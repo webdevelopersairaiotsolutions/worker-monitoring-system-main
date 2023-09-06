@@ -126,13 +126,13 @@ const ViewAllFeed = () => {
   };
 
   return (
-    <div className="p-6 ml-72 mt-20">
+    <div className="">
       <Navbar />
       <Sidebar />
       {/* <div className="text-2xl font-semibold mb-4 flex flex-col items-center">
         Live Feed
       </div> */}
-      <div className="flex flex-wrap w-full gap-3 justify-normal">
+      <div className="flex flex-wrap w-full gap-3 justify-normal m-3">
         
         {channels.map((channel) => (
           <div key={channel.id} className="flex ">

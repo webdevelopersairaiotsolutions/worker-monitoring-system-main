@@ -156,10 +156,10 @@ const RTSPstream = () => {
   }, []);
 
   return (
-    <div className="p-6 ml-72 mt-14">
+    <div className="">
       <Navbar />
       <Sidebar />
-      <div className="flex flex-wrap w-full gap-3 justify-normal">
+      <div className="flex flex-wrap w-full gap-5 justify-normal m-4">
         {playerConfigs.map(({ streamURL, canvasRef }, index) => (
           <div
             key={index}
@@ -169,7 +169,7 @@ const RTSPstream = () => {
            <canvas
             key={index}
             ref={canvasRef}
-            className="bg-black rounded-[10px]"
+            className="bg-black my-2 rounded-[10px]"
             style={{ height: "240px", width: "375px" }}
           ></canvas>
           </div>
